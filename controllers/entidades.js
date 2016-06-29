@@ -1,6 +1,7 @@
 module.exports = function(app) {
 
   var Entidade = app.models.entidades;
+  // var Doaçoes = app.models.doacoes;
 
   var EntidadesController = {
     index: function(req, res) {
@@ -26,6 +27,10 @@ module.exports = function(app) {
         }
       });
     },
+    // showOne: function(req, res) {
+    // Entidade.findOne({_id: req.body._id})
+    // 
+    //}
     create: function(req, res) {
       res.render('entidades/create', {
         user: new Entidade()
