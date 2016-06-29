@@ -35,7 +35,8 @@ module.exports = function() {
 			type: String,
 		},
 		valortotal: {
-			type: String,
+			type: Number,
+			default: 0.0
 		},
 		data_cad: {
 			type: Date,
@@ -45,3 +46,6 @@ module.exports = function() {
 
 	return mongoose.model('Entidades', entidadesSchema);
 }
+// if (valor.status) 
+// valor.doacao.valordoado
+// Entidades.findByIdAndUpdate(id, {valortotal: valordoado}, function () {} )
